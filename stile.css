@@ -738,7 +738,7 @@ h1 {
     }
 
 
-    @media (max-width: 404px) {
+    @media (max-width: 390px) {
         .menu-button {
             display: block;
         }

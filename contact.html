@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Nico Fiore</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="stile.css">
+  <link rel="stylesheet" href="https://use.typekit.net/omr5wrc.css">
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.7.1/gsap.min.js"></script>
+
+</head>
+<body>
+
+<header class="header">
+
+  <div class="reveal reveal--animate"></div>
+
+
+  <div class="logo-container line">
+    <a href="index.html"><span>nicofiore</span></a>
+  </div>
+
+  <!-- Navbar per desktop -->
+  <nav class="navbar-desktop">
+    <ul class="nav-links">
+      <li class="line"><a href="work.html"><span>work</span></a></li>
+      <li class="line"><a href="about.html"><span>About</span></a></li>
+      <li class="line"><a href="contact.html"><span>Contact</span></a></li>
+      <li class="line"><a href="shop.html" style="color: #F9F9F9"><span>shop</span></a></li>
+    </ul>
+  </nav>
+
+
+  <!-- Pulsante per aprire il menu su mobile -->
+  <button id="navButton" class="nav-button" onclick="toggleNav()">
+    <div class="line"> <span class="open">MENU</span> </div>
+      <div class="line"> <span class="close">CHIUDI</span> </div>
+  </button>
+
+
+<!-- Menu di navigazione mobile -->
+<div class="nav-overlay" id="navOverlay">
+  <ul class="nav-menu">
+    <li class="line"><a href="work.html"><span>Work</span></a></li>
+    <li class="line"><a href="about.html"><span>About</span></a></li>
+    <li class="line"><a href="contact.html"><span>Contact</span></a></li>
+    <li class="line"><a href="shop.html"><span>shop</span></a></li>
+  </ul>
+  <div class="contact-info">
+    <div> <p>t. +39 388 87 67 566 <br> e. info@nicofiore.com</p> </div>
+    <div> <p> <br> ©2022-2023</p> </div>
+  </div>
+</div>
+
+</header>
+
+<div class="hero2">
+  <div class="hero-text2">
+    <div class="line"><span>Nico Fiore is a brand & digital designer</span></div>
+    <div class="line"><span>based in Andria, focused on branding,</span></div>
+    <div class="line"><span>web design and editorial project.</span></div>
+  </div>
+</div>
+
+<div class="footer">
+  <div>
+    <p>Nico Fiore <br> Brand Designer</p>
+  </div>
+  <div>
+    <p>t. +39 388 87 67 566 <br> e. info@nicofiore.com</p>
+  </div>
+  <div>
+    <p><a href="#next-section"> Cookie Policy</a></p>
+    <p><a href="#next-section"> Privacy Policy</a></p>
+  </div>
+  <div>
+    <p> CF: FRINLN96S03A285V <br> Portfolio ©2022-2023</p>
+  </div>
+</div>
+
+<!-- Mobile MENU -->
+<script src="script.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<script>
+  const textrev = gsap.timeline();
+
+
+
+  // Animazione del logo
+  textrev.from(".logo-container span", 1.8, {
+    y: 200,
+    ease: "power4.out",
+    delay: 0.5,
+    skewY: 10
+  });
+
+  // Animazione delle voci del menu
+  textrev.from(".navbar-desktop .line span", 1.8, {
+    y: 200,
+    ease: "power4.out",
+    skewY: 10,
+    stagger: {
+      amount: 0.6,
+    },
+  }, "-=1.5");
+
+  // Animazione della sezione hero
+  textrev.from(".hero .hero-text .line span", 1.8, {
+    y: 200,
+    ease: "power4.out",
+    skewY: 10,
+    stagger: {
+      amount: 0.6,
+    },
+  }, "-=1.5");
+
+  // Animazione delle voci sottostanti
+  textrev.from(".hero .contact-info .line", 1.8, {
+    y: 200,
+    ease: "power4.out",
+    skewY: 10,
+    stagger: {
+      amount: 0.6,
+    },
+  }, "-=1.5");
+</script>
+
+</body>
+</html>

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Nico Fiore</title>
+  <link rel="stylesheet" type="text/css" href="stile.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+<div class="cursor"></div>
+<div class="cursor2"></div>
+
+
+
+<header class="header">
+  <div class="menu">
+    <div class="info_menu">
+      <div class="menu1">
+        <div><a href="index.html">nico fiore</a><br>
+          brand & digital designer </div>
+      </div>
+
+      <div class="menu2">
+        <div>disponibile per lavori <br>
+          a contratto o freelance </div>
+      </div>
+
+      <div class="menu3">
+        <div>(+39)  3888767566<br>
+          ciao@nicofiore.com</div>
+      </div>
+    </div>
+
+    <div class="clickmenu">
+
+    <!-- Navbar per desktop -->
+    <nav class="navbar-desktop">
+      <ul class="nav-links">
+        <li><a href="about.html"><span>about</span></a></li>
+        <li><a href="work.html"><span>work</span></a></li>
+        <li><a href="shop.html"><span>shop</span></a></li>
+        <li><a href="contact.html"><span>contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-button"><button class="nav_toggle" id="nav">menu</button></div>
+  </div>
+  </div>
+</header>
+
+<!-- Menu di navigazione mobile -->
+<div id="mb_nav" class="nav">
+  <ul>
+    <li><a class="nav__link" href="index.html"><span>home</span></a></li>
+    <li><a class="nav__link" href="progetti.html"><span>about</span></a></li>
+    <li><a class="nav__link" href="chisono.html"><span>work</span></a></li>
+    <li><a class="nav__link" href="manifesto.html"><span>shop,</span></a></li>
+    <li><a class="nav__link" href="contatti.html"><span>contact</span></a></li>
+  </ul>
+  <div class="contatti">
+    <div>disponibile per lavori <br>
+      a contratto o freelance </div>
+    <div>(+39) 388 87 67 566<br>
+      ciao@nicofiore.com</div>
+  </div>
+</div>
+
+
+<div class="hero">
+  <div class="marquee__wrapper">
+      <div class="marquee__inner">
+        <div class="marquee" data-direction="left">
+          <p class="text-xxl">Brand + Digital +</p>
+        </div>
+      </div>
+  </div>
+  <div class="about">
+  <p style="margin: 0">Da oltre dieci anni, elevo la presenza sul mercato <br>
+    dei miei clienti trasformando le loro visioni in marchi <br>
+    influenti attraverso la narrazione visiva strategica.</p>
+  </div>
+  <div class="info">
+    <div><p style="margin: 0">Andria, Puglia, Italia</p></div>
+    <div><p style="margin: 0">Facebook, Instagram, LinkedIn</p></div>
+    <div class="scrolling"><p style="margin: 0"> <a href="#click"> occhio </a> </p></div>
+  </div>
+</div>
+
+<div class="swiper-container" id="click">
+  <div class="swiper-wrapper">
+    <!-- Slides -->
+    <div class="swiper-slide"><img src="images/slider-0.jpg" alt="Slide 1"></div>
+    <div class="swiper-slide"><img src="images/slider-7.jpg" alt="Slide 2"></div>
+    <div class="swiper-slide"><img src="images/slider-27.jpg" alt="Slide 3"></div>
+  </div>
+  <!-- Scroll Text -->
+  <div  class="scroll-text" id="scrollText"></div>
+</div>
+
+<div class="test1">
+
+  <div class="interna1">
+    <div class="contenuto">
+      <div><p class="pc">CHI SONO</p></div>
+      <div style="display: flex; flex-direction:column">
+        <div><h1 class="h1c">Ciao, piacere di conoscerti. Mi chiamo Nico e da 5 anni accompagno imprenditori e professionisti in un percorso che li aiuta a rimettere a fuoco la propria comunicazione online e offline, ottenendo risultati.</h1></div>
+        <div class="pulsante" style="padding-top: 2rem; padding-bottom:2rem"; >Scopri di più su di me<button>→</button></div>
+      </div>
+    </div>
+  </div>
+
+
+</div>
+
+<div class="test2">
+
+
+</div>
+
+<!--
+<div class="container">
+  <section class="section" id="section1" style="border-radius: 0 ">
+  </section>
+  <section class="section" id="section2">
+    <div class="interna1">
+      <div class="contenuto">
+        <div><p class="pc">CHI SONO</p></div>
+        <div style="display: flex; flex-direction:column">
+          <div><h1 class="h1c">Ciao, piacere di conoscerti. Mi chiamo Nico e da 5 anni accompagno imprenditori e professionisti in un percorso che li aiuta a rimettere a fuoco la propria comunicazione online e offline, ottenendo risultati.</h1></div>
+          <div style="padding-top: 2rem; padding-bottom:2rem"><button >Scopri di più su di me →</button></div>
+        </div>
+      </div>
+      <div class="contenuto">
+        <div><p class="pc">QUALCHE DATO</p></div>
+        <div style="display: flex; flex-direction:column; justify-content: space-between">
+          <div><p class="pc">Scopri di più <br> su di me </p></div>
+          <div><h1 class="h1c">5</h1></div>
+        </div>
+        <div style="display: flex; flex-direction:column">
+          <div><p class="pc">Scopri di più <br> su di me </p></div>
+          <div><h1 class="h1c">5</h1></div>
+        </div>
+        <div style="display: flex; flex-direction:column">
+          <div><p class="pc">Scopri di più <br> su di me </p></div>
+          <div><h1 class="h1c">5</h1></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section class="section" id="section3">ABOUT</section>
+  <section class="section" id="section4">WORK</section>
+  <section class="section" id="section5">REVIEW</section>
+  <section class="section" id="section6">FOOTER</section>
+</div> -->
+
+<!-- Mobile MENU -->
+<script src="script.js"></script>
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script>
+  // Initialize Swiper
+  const swiper = new Swiper('.swiper-container', {
+    pagination: {
+      el: '.swiper-pagination',
+      type: 'fraction',
+    },
+    navigation: false,
+    autoplay: {
+      delay: 3000, // Delay in milliseconds
+      disableOnInteraction: false,
+    },
+    speed: 1000, // Transition speed in milliseconds
+  });
+
+  // Add hover and click effect for scroll text
+  const container = document.querySelector('.swiper-container');
+  const scrollText = document.getElementById('scrollText');
+
+  container.addEventListener('mousemove', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; // x position within the element
+    const y = e.clientY - rect.top;  // y position within the element
+
+    scrollText.style.left = `${x}px`;
+    scrollText.style.top = `${y}px`;
+
+    if (x < rect.width / 2) {
+      scrollText.textContent = '←';
+    } else {
+      scrollText.textContent = '→';
+    }
+  });
+
+  container.addEventListener('mouseleave', () => {
+    scrollText.style.opacity = 0;
+  });
+
+  container.addEventListener('mouseenter', () => {
+    scrollText.style.opacity = 0.8;
+  });
+
+  container.addEventListener('click', (e) => {
+    const rect = container.getBoundingClientRect();
+    const x = e.clientX - rect.left; // x position within the element
+
+    if (x < rect.width / 2) {
+      swiper.slidePrev();
+    } else {
+      swiper.slideNext();
+    }
+  });
+</script>
+</body>
+</html>

@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <title>Nico Fiore</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="stile.css">
+  <link rel="stylesheet" href="https://use.typekit.net/omr5wrc.css">
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+  <script src="https://unpkg.com/scrollreveal"></script>
+  <script>
+    ScrollReveal({ reset: true });
+  </script>
+
+</head>
+<body>
+
+
+<header class="header">
+
+  <div class="reveal reveal--animate"></div>
+
+  <div class="logo-container">
+    <a href="index.html">
+      <img src="image/svg/logo.svg" alt="Logo" class="logo">
+    </a>
+  </div>
+
+  <!-- Navbar per desktop -->
+  <nav class="navbar-desktop">
+    <ul class="nav-links">
+      <li><a href="work.html">Work</a></li>
+      <li><a href="studio.html">Studio</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Pulsante per aprire il menu su mobile -->
+  <button id="navButton" class="nav-button" onclick="toggleNav()">
+    <span class="open">MENU</span>
+    <span class="close">CHIUDI</span>
+  </button>
+</header>
+
+<!-- Menu di navigazione mobile -->
+<div class="nav-overlay" id="navOverlay">
+  <ul class="nav-menu">
+    <li><a href="work.html">Work</a></li>
+    <li><a href="studio.html">Studio</a></li>
+    <li><a href="about.html">About</a></li>
+    <li><a href="contact.html">Contact</a></li>
+  </ul>
+  <div class="contact-info">
+    <div> <p>t. +39 388 87 67 566 <br> e. info@nicofiore.com</p> </div>
+    <div> <p> <br> ©2022-2023</p> </div>
+  </div>
+</div>
+
+
+<div class="titolo">
+  <h1 class="headline">Anmol Govinda Rao is a Singaporean graphic designer <br>
+    with a strong passion for creating visual identities <br>
+    and experiences.</h1>
+</div>
+
+<div class="griglia">
+
+  <div class="line"><div class="riga">
+    <div class="elemento grande4">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+  </div></div>
+
+
+  <div class="riga">
+    <div class="elemento grande">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+
+    <div class="elemento piccola">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="elemento grande2">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+
+    <div class="elemento grande2">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="elemento grande3">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+
+    <div class="elemento grande1">
+      <img src="wide-12.png" alt="Immagine 1">
+    </div>
+  </div>
+</div>
+
+
+
+
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 30,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+  <script>
+    const appRoot = document.getElementById("page");
+    const nav = document.querySelector(".navigation");
+    const root = document.documentElement;
+    const endTransition = () => {
+      const loader = document.querySelector(".loader");
+      loader.addEventListener("transitionend", () => {
+        loader.style.transform = "translateX(100%)";
+        root.classList.remove("disable-hover");
+      });
+      loader.style.transform = "";
+    };
+
+    const startTransition = () => {
+      const loader = document.querySelector(".loader");
+      loader.style.transform = "translateX(100%)";
+      appRoot.dataset.route = "a";
+    };
+
+    nav.addEventListener("click", e => {
+      if (e.target.nodeName === "A") {
+        let a = Array.from(nav.children).find(v => v.closest(".active"));
+        root.classList.add("disable-hover");
+        a.classList.remove("active");
+        e.target.classList.add("active");
+        e.preventDefault();
+      }
+    });
+
+    const onRouteClick = route => {
+      if (appRoot.dataset.route === route) return;
+      appRoot.dataset.route = route;
+      endTransition();
+    };
+
+    window.addEventListener("load", () => {
+      startTransition();
+    });
+    </script>
+
+</body>
+</html>

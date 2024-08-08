@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <title>Nico Fiore</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  <link rel="stylesheet" type="text/css" href="stile.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+</head>
+<body>
+
+
+
+<header class="header">
+  <div class="menu">
+    <div class="info_menu">
+      <div class="menu1">
+        <div><a href="index.html">nico fiore</a><br>
+          brand & digital designer </div>
+      </div>
+
+      <div class="menu2">
+        <div>disponibile per lavori <br>
+          a contratto o freelance </div>
+      </div>
+
+      <div class="menu3">
+        <div>(+39)  3888767566<br>
+          ciao@nicofiore.com</div>
+      </div>
+    </div>
+
+    <div class="clickmenu">
+
+    <!-- Navbar per desktop -->
+    <nav class="navbar-desktop">
+      <ul class="nav-links">
+        <li><a href="progetti.html"><span>work,</span></a></li>
+        <li><a href="chisono.html"><span>about,</span></a></li>
+        <li><a href="contatti.html"><span>shop,</span></a></li>
+        <li><a href="shop.html"><span>contact</span></a></li>
+      </ul>
+    </nav>
+
+    <div class="menu-button"><button class="nav_toggle" id="nav">menu</button></div>
+  </div>
+  </div>
+</header>
+
+<!-- Menu di navigazione mobile -->
+<div id="mb_nav" class="nav">
+  <ul>
+    <li><a class="nav__link" href="index.html"><span>homepage,</span></a></li>
+    <li><a class="nav__link" href="progetti.html"><span>progetti,</span></a></li>
+    <li><a class="nav__link" href="chisono.html"><span>chi sono,</span></a></li>
+    <li><a class="nav__link" href="manifesto.html"><span>manifesto,</span></a></li>
+    <li><a class="nav__link" href="contatti.html"><span>contatti,</span></a></li>
+    <li><a class="nav__link" href="shop.html" style="opacity:50%;"><span>shop</span></a></li>
+  </ul>
+  <div class="contatti">
+    <div>disponibile per lavori <br>
+      a contratto o freelance </div>
+    <div>(+39) 3888767566<br>
+      ciao@nicofiore.com</div>
+  </div>
+</div>
+
+
+<div class="hero">
+
+  <div class="selettore">
+    <button class="filterbtn opacity active" onclick="filterSelection('tutti', this)">tutti <sup class="suptag" id="allCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('branding', this)">branding <sup class="suptag" id="brandingCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('logo design', this)">logo design<sup class="suptag" id="logoCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('editorial', this)">editorial<sup class="suptag" id="editorialCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('ux/ui', this)">ux / ui<sup class="suptag" id="uxuiCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('webdesign', this)">web design <sup class="suptag" id="webCount"></sup></button>
+    <button class="filterbtn opacity" onclick="filterSelection('social identity', this)">social identity<sup class="suptag" id="socialCount"></sup></button>
+  </div>
+
+</div>
+
+<div class="griglia">
+
+  <div class="line"><div class="riga">
+    <div class="elemento grande4">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+  </div></div>
+
+
+  <div class="riga">
+    <div class="elemento grande">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+
+    <div class="elemento piccola">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="elemento grande2">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+
+    <div class="elemento grande2">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="elemento grande">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">Nome cliente</span>
+        <span class="servizio">Branding, Logo Design</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="medio_sin">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">nome cliente</span>
+        <span class="servizio">branding, logo Design</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="riga_centrale">
+    <div class="medio_centro">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">nome cliente</span>
+        <span class="servizio">branding, logo Design</span>
+      </div>
+    </div>
+  </div>
+
+  <div class="riga">
+    <div class="medio_dx">
+      <img src="wide-12.png" alt="Immagine 1">
+      <div class="testo">
+        <span class="cliente">nome cliente</span>
+        <span class="servizio">branding, logo Design</span>
+      </div>
+    </div>
+  </div>
+
+
+
+</div>
+
+
+
+
+<!-- Mobile MENU -->
+<script src="script.js"></script>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+<!-- Initialize Swiper -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    spaceBetween: 0,
+    centeredSlides: true,
+    autoplay: {
+      delay: 4000,
+      disableOnInteraction: false,
+    },
+    pagination: {
+      el: ".swiper-pagination",
+      type: "fraction",
+    },
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+  });
+</script>
+
+<script>
+  gsap.registerPlugin(ScrollTrigger);
+
+  // Seleziona tutte le sezioni
+  const sections = document.querySelectorAll('.sezione1, .sezione2, .sezione3, .sezione4');
+
+  // Configura ScrollTrigger per ciascuna sezione
+  sections.forEach((section, index) => {
+    ScrollTrigger.create({
+      trigger: section,
+      start: "top top", // Quando la sezione raggiunge la parte superiore dello schermo
+      end: "bottom top", // Quando la sezione lascia la parte superiore dello schermo
+      pin: true, // Fissa la sezione in alto
+      pinSpacing: false, // Rimuove lo spazio aggiuntivo sotto la sezione quando viene fissata
+      zIndex: index + 2, // Incrementa lo z-index per ogni sezione
+      onEnter: () => gsap.to(section, { borderRadius: '0px', duration: 0.1 }),
+      onLeaveBack: () => gsap.to(section, { borderRadius: '15px', duration: 0.1 })
+    });
+  });
+
+  // Configura lo snapping tra le sezioni
+  ScrollTrigger.create({
+    trigger: document.body,
+    start: "top top",
+    end: `+=${sections.length * 100}vh`, // Estendi l'area di scorrimento
+    snap: {
+      snapTo: 1 / (sections.length - 1), // Snap per il numero di sezioni
+      duration: 0.5, // Durata dello snap
+      delay: 0.1, // Ritardo per l'effetto di snap
+      ease: "power1.inOut" // Facilita il movimento di snap
+    },
+    scrub: true
+  });
+</script>
+
+
+
+</body>
+</html>
